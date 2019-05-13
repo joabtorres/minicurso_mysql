@@ -61,7 +61,7 @@ INSERT INTO produtos (cod, nome, cod_categoria, quantidade, valor_custo, valor_v
 SELECT * FROM categorias;
 
 -- LISTAR TODAS OS PRODUTOS --
-SELECT * FROM protudos;
+SELECT * FROM produtos;
 
 -- LISTAR O PRODUTO DO CODIGO 100021 --
 SELECT * FROM produtos WHERE cod = '100021';
@@ -82,12 +82,12 @@ SELECT DISTINCT(cod_categoria) FROM produtos;
 SELECT nome  FROM produtos WHERE nome LIKE '%Feijão%';
 
 -- Exibir quantidade de produtos cadastrados --
-SELECT COUNT (cod) FROM produtos;
+SELECT COUNT(cod) FROM produtos;
 
---Exibir codigo do produto com outro nome --
+-- Exibir codigo do produto com outro nome --
 SELECT cod AS id_produto FROM produtos;
 
---Exibir codigo do produto com outro nome com intervalo de 100001 a 100010 --
+-- Exibir codigo do produto com outro nome com intervalo de 100001 a 100010 --
 SELECT cod AS id_produto FROM produtos WHERE cod BETWEEN '100001' AND '100010';
 
 

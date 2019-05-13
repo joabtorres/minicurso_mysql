@@ -1,0 +1,3 @@
+-- SÓ POSSÍVEL EXCLUIR UM REGISTRO SE ELE NÃO FOR RELACIONADO A OUTRA TABELA
+-- EXCLUIR usuario
+DELETE FROM usuario WHERE cod='1'; -- nenhuam relação encontrada

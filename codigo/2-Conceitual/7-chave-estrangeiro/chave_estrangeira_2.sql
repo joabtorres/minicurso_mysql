@@ -22,7 +22,7 @@ CREATE TABLE produtos(
 	valor_receita DOUBLE	
 )ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
-ALTER TABLE produtos ADD CONSTRAINT fk_categoria FOREIGN KEY (cod_categoria) REFERENCES categorias (id)
+ALTER TABLE produtos ADD CONSTRAINT fk_categoria FOREIGN KEY (cod_categoria) REFERENCES categorias (id);
 
 -- INSERINDO REGISTROS NA TABELA CATEGORIAS --
 INSERT INTO categorias(id, nome) VALUES ('1', 'Alimentício');

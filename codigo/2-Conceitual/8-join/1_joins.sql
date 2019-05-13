@@ -65,8 +65,8 @@ SELECT produtos.*, categorias.nome FROM produtos INNER JOIN categorias WHERE pro
 
 -- Utilizando Inner JOIN --
 SELECT p.*, c.nome FROM produtos AS p INNER JOIN categorias AS c WHERE p.cod_categoria=c.id;
-
-
+SELECT p.*, c.nome FROM produtos AS p INNER JOIN categorias AS c WHERE p.cod_categoria=c.id AND c.id='3';
+SELECT p.*, c.nome FROM produtos AS p INNER JOIN categorias AS c WHERE p.cod_categoria=c.id AND c.id='4';
 
 -- Utilizando Left JOIN --
 SELECT produtos.*, categorias.nome FROM produtos LEFT JOIN categorias ON produtos.cod_categoria=categorias.id;
